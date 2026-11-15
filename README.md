@@ -14,10 +14,14 @@ For best compatibility, you can also serve the folder with a simple local static
 
 - Admin-panel style dashboard with attendance, present, absent and active-subject KPIs.
 - Subject management: add, edit, search and delete subjects.
+- Set a required session total per subject and track marked sessions, sessions remaining and completion on the dashboard.
+- Completed subjects become view-only for attendance.
+- Persistent light and dark appearance toggle.
 - Weekly recurring timetable: create, edit and delete subject time slots for each day.
 - Overlap validation for time slots on the same day.
 - Daily attendance generated directly from that day's timetable.
 - Mark Present or Absent; click the selected mark again to clear it.
+- Attendance progress counts both Present and Absent marks against the subject's required total. Once the target is reached, that subject cannot be marked or changed further.
 - No scheduled subject means no attendance entry and no attendance penalty for that day.
 - Attendance totals and rates by subject, plus recent attendance history.
 - Seven-day consistency chart and subject performance on the dashboard.

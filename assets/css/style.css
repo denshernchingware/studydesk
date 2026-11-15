@@ -3,3 +3,36 @@
 @media(max-width:1150px){.sidebar{width:220px}.main-area{margin-left:220px}.page-wrap{padding:28px 25px}.topbar{padding:0 25px}.timetable-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.subject-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:800px){.sidebar{transform:translateX(-100%);transition:.25s;box-shadow:10px 0 35px #25294215}.sidebar.open{transform:translateX(0)}.main-area{margin-left:0}.mobile-menu{display:block}.topbar{gap:15px;padding:0 18px}.crumb{margin-right:auto}.today-label{display:none}.page-wrap{padding:25px 18px}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.dashboard-grid{grid-template-columns:1fr}.timetable-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.welcome-row,.page-title-row{align-items:flex-start}.welcome-row{flex-direction:column}.subject-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:500px){h1{font-size:23px}.kpi-card{padding:14px;min-height:128px}.kpi-value{font-size:23px}.subject-grid{grid-template-columns:1fr}.timetable-grid{grid-template-columns:1fr 1fr}.timetable-summary{gap:13px;justify-content:space-between;padding:12px}.summary-item{gap:7px}.summary-icon{width:27px;height:27px}.summary-item b{font-size:13px}.summary-item small{font-size:8px}.panel{padding:15px}.date-control{align-items:flex-start;flex-direction:column;gap:5px}.attendance-row{grid-template-columns:52px 1fr;gap:8px}.attendance-actions{grid-column:2;justify-content:flex-start}.attendance-actions button{padding:7px 13px}.form-row{grid-template-columns:1fr 1fr}.topbar-right{gap:0}}
+.theme-toggle{border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);padding:7px 10px;font-size:10px;font-weight:700;cursor:pointer;white-space:nowrap}
+.theme-toggle:focus-visible,.btn:focus-visible,.mini-btn:focus-visible,.attendance-actions button:focus-visible{outline:2px solid var(--purple);outline-offset:2px}
+.session-progress-item{display:grid;gap:7px}
+.session-progress-heading,.session-progress-foot,.subject-progress-label{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.session-progress-heading{font-size:10px}
+.session-progress-heading b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.session-progress-heading span,.session-progress-foot{color:var(--muted);font-size:9px}
+.session-progress-item .performance-track span,.subject-progress .performance-track span{background:var(--purple)}
+.session-progress-foot small{font-size:9px}
+.subject-progress{width:100%;margin:12px 0}
+.subject-progress-label{font-size:9px;color:var(--muted);margin-bottom:6px}
+.subject-progress-label b{color:var(--purple)}
+.subject-progress-unset{font-size:9px;color:var(--muted);margin:12px 0}
+.subject-complete .subject-progress-label b,.subject-complete .session-progress-foot>span,.complete-note{color:var(--green)}
+.complete-note{font-size:10px;font-weight:700;white-space:nowrap}
+.table-progress{display:block;color:var(--muted);font-size:9px;margin-top:3px}
+body[data-theme=dark]{--ink:#ececf4;--muted:#a5a8bb;--line:#343649;--bg:#181a27;--white:#232536;--purple-soft:#302d4c;--green-soft:#233e38;--orange-soft:#45372c;--blue-soft:#26394d;--shadow:0 8px 30px rgba(0,0,0,.18)}
+body[data-theme=dark] .sidebar,body[data-theme=dark] .topbar,body[data-theme=dark] .kpi-card,body[data-theme=dark] .panel,body[data-theme=dark] .modal,body[data-theme=dark] .subject-card{background:#232536;color:var(--ink)}
+body[data-theme=dark] .storage-card,body[data-theme=dark] .today-session,body[data-theme=dark] .attendance-row,body[data-theme=dark] .slot-card,body[data-theme=dark] .day-column,body[data-theme=dark] .notice{background:#292b3d;border-color:var(--line)}
+body[data-theme=dark] .storage-card{border-color:var(--line)}
+body[data-theme=dark] .brand-light,body[data-theme=dark] .crumb b,body[data-theme=dark] .kpi-top,body[data-theme=dark] .subject-card h3,body[data-theme=dark] .empty-state b,body[data-theme=dark] .attendance-info b,body[data-theme=dark] .history-detail b{color:var(--ink)}
+body[data-theme=dark] .nav-link,body[data-theme=dark] .crumb,body[data-theme=dark] .today-label,body[data-theme=dark] .session-time,body[data-theme=dark] .session-sub,body[data-theme=dark] .session-status,body[data-theme=dark] .chart-label,body[data-theme=dark] .chart-legend,body[data-theme=dark] .performance-pct,body[data-theme=dark] .subject-code,body[data-theme=dark] .subject-desc,body[data-theme=dark] .subject-stats,body[data-theme=dark] .attendance-time,body[data-theme=dark] .attendance-info small,body[data-theme=dark] .history-detail small,body[data-theme=dark] .history-date small{color:var(--muted)}
+body[data-theme=dark] .storage-card p,body[data-theme=dark] .sidebar-foot,body[data-theme=dark] .nav-label,body[data-theme=dark] .eyebrow,body[data-theme=dark] .kpi-note,body[data-theme=dark] .kpi-foot{color:#9699ad}
+body[data-theme=dark] .nav-link:hover,body[data-theme=dark] .quick-action:hover{background:#2c2d42}
+body[data-theme=dark] .search-box input,body[data-theme=dark] .modal input,body[data-theme=dark] .modal select,body[data-theme=dark] .modal textarea,body[data-theme=dark] .date-control input{background:#1b1d2b;color:var(--ink);border-color:var(--line)}
+body[data-theme=dark] .btn-ghost,body[data-theme=dark] .mini-btn,body[data-theme=dark] .icon-button,body[data-theme=dark] .attendance-actions button{background:#303246;color:var(--ink)}
+body[data-theme=dark] .mini-track,body[data-theme=dark] .performance-track,body[data-theme=dark] .subject-progress .performance-track{background:#38394d}
+body[data-theme=dark] .chart-bar:not(.present):not(.absent),body[data-theme=dark] .legend-dot.none{background:#414255}
+body[data-theme=dark] .data-table th{color:#b4b6c7;border-color:var(--line)}
+body[data-theme=dark] .data-table td,body[data-theme=dark] .history-row{border-color:var(--line)}
+body[data-theme=dark] .data-table td:first-child,body[data-theme=dark] .history-date b,body[data-theme=dark] .history-badge{color:var(--ink)}
+body[data-theme=dark] .theme-toggle{background:#303246;color:var(--ink)}
+@media(max-width:500px){.theme-toggle{padding:6px 8px;font-size:9px}.topbar-right{gap:0}.topbar-right .avatar{margin-left:8px}}
